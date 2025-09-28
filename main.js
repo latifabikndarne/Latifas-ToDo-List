@@ -1,9 +1,9 @@
 //Variable deklarieren
 const completedElement = document.querySelector("#Completed");
 const inputTodo = document.querySelector("#inputTodo");
-const addButton = document.querySelector("#addButton");
+const addTodoButton = document.querySelector("#addTodoButton");
 const todoList = document.querySelector("#todoList");
-const infoText = document.querySelector("small");
+const infoTextElement = document.querySelector("small");
 
 //för att inputfältet ska vara tomt när sidan laddas
 let todoText = "";
