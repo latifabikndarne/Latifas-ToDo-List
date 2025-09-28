@@ -8,6 +8,8 @@ const infoTextElement = document.querySelector("small");
 //för att inputfältet ska vara tomt när sidan laddas
 let todoText = "";
 let Completed = 0;
+let text = inputTodo.value;
+let todoArray = [];
 //EventListerner för knappen
 addTodoButton.addEventListener("click", addToDo);
 
@@ -15,6 +17,10 @@ addTodoButton.addEventListener("click", addToDo);
 function addToDo() {
     infoTextElement.textContent="";
     todoText = inputTodo.value;
+    todoArray.push(todoText);
+
+    //Validering för att inte lägga till tomma uppgifter
+
     if (todoText == 0) {
         infoTextElement.textContent="Skriv en uppgift!";
         return
@@ -43,6 +49,7 @@ itemText.addEventListener("click",
 );
 //För att få in text i li elementet
 item.appendChild(itemText);
+
 //För att tömma inputfältet efter varje inmatning
 inputTodo.value = "";
 }
