@@ -28,7 +28,10 @@ function addToDo() {
 //Att deklarerali element och sedan lägga till dem i todoList
 const item = document.createElement("li");
 todoList.appendChild(item);
-// span element för att hålla texten
+
+
+
+// span element för att behålla texten
 const itemText = document.createElement("span");
 itemText.innerText = todoText;
 
@@ -49,6 +52,21 @@ itemText.addEventListener("click",
 );
 //För att få in text i li elementet
 item.appendChild(itemText);
+
+//Lägger till en papperskorgsikon för att ta bort uppgifter
+const trashcan = document.createElement("span");
+trashcan.innerHTML = "&#128465;";
+trashcan.setAttribute("class", "trashcan");
+item.appendChild(trashcan);
+
+//EventListener för att ta bort uppgifter
+trashcan.addEventListener("click", function() {
+    todoList.removeChild(item);
+    todoArray = todoArray.filter(function(todo) {
+        return todo !== todoText;
+    });
+});
+
 
 //För att tömma inputfältet efter varje inmatning
 inputTodo.value = "";
