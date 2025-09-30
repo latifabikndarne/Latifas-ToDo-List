@@ -5,17 +5,18 @@ const addTodoButton = document.querySelector("#addTodoButton");
 const todoList = document.querySelector("#todoList");
 const infoTextElement = document.querySelector("small");
 
-//för att inputfältet ska vara tomt när sidan laddas
+//för att inputfältet ska vara tomt när uppgiften har lagts till
 let todoText = "";
 let Completed = 0;
 let text = inputTodo.value;
+ infoTextElement.textContent="";
 let todoArray = [];
 //EventListerner för knappen
 addTodoButton.addEventListener("click", addToDo);
 
 //funktion för att lägga till todoText
 function addToDo() {
-    infoTextElement.textContent="";
+   
     todoText = inputTodo.value;
     todoArray.push(todoText);
 
@@ -25,7 +26,7 @@ function addToDo() {
         infoTextElement.textContent="Skriv en uppgift!";
         return
     }
-//Att deklarerali element och sedan lägga till dem i todoList
+//Att deklarera li element och sedan lägga till dem i todoList
 const item = document.createElement("li");
 todoList.appendChild(item);
 
@@ -38,12 +39,12 @@ itemText.innerText = todoText;
 //EventListerner på varje li element för att markera som klar
 itemText.addEventListener("click",
      function() {
-        if (item.getAttribute("class") == "completed") {
-            item.setAttribute("class", "");
+        if (itemText.getAttribute("class") == "completed") {
+            itemText.setAttribute("class", "");
             Completed--;
             completedElement.textContent ="Utförda uppgifter: " + Completed;        
         } else {
-            item.setAttribute("class", "completed");
+            itemText.setAttribute("class", "completed");
             Completed++;
             completedElement.textContent ="Utförda uppgifter: " + Completed;
         }

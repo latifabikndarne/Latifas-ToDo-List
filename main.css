@@ -4,11 +4,14 @@ h1 {
 
 .completed {
     text-decoration: line-through;
-    color: lightskyblue;    
+    color: rgb(243, 173, 160);    
 }
 
 .trashcan{
     font-size: large;
-    margin-left: 10px;
+    margin: 8px;
+    color: rgb(213, 55, 55)
+    
+    
     
 }
