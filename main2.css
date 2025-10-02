@@ -1,0 +1,73 @@
+html{
+     background-image: url(https://wallpapers.com/images/featured-full/basta-host-bakgrund-6bknwlvjqoyg1nmb.jpg);
+    background-repeat: no-repeat;      
+     background-size: cover;            
+    background-position: center;
+      
+}
+    
+
+ div {
+    background-color : rgba(225, 193, 145, 0.712);
+    box-sizing: border-box;
+    width: 350px;
+    height:300px;
+    padding : 1px;
+    margin-left : 100px;
+    border: 1px, solid, rgba(190, 209, 203, 0.948);
+    border-radius : 20px;
+
+ }
+
+
+h1 {
+    color: rgb(150, 78, 78);
+    font-family: 'Dancing Script', 'Pacifico', cursive;
+    font-size: 20px;  
+    text-align: center;
+    
+    
+}
+
+#inputTodo{
+    background-color :rgb(217, 231, 233);
+    width : 170px;
+    height:30px;
+    border : 2px, solid, rgb(150, 78, 78);
+    border-radius: 20px;
+    margin-left : 90px;
+    
+} 
+#todoList {
+  list-style-type: circle, 10px, black;
+  margin-left : 90px;
+  list-style-position: outside;
+  font-family: 'Dancing Script', 'Pacifico', cursive;
+  
+}
+
+#addTodoButton {
+    background-color : rgba(202, 125, 81, 0.895);
+    font-family: 'Dancing Script', 'Pacifico', cursive;
+    font-size: 10px; 
+    margin-left : 140px;
+    margin-top : 30px;
+    height: 30px;
+    color : black;
+    border : 2px, solid, rgb(125, 77, 45);
+    border-radius: 20px;
+
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(213, 55, 55);    
+}
+
+.trashcan{
+    font-size: large;
+    margin-left: 8px;
+    color: rgb(213, 55, 55);
+  
+    
+}

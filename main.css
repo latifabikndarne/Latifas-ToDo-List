@@ -1,17 +1,59 @@
+body {
+    background-color: rgba(159, 171, 174, 0.948);
+    
+}
+ div {
+    background-color : rgba(188, 207, 220, 0.948);
+    box-sizing: border-box;
+    width: 500px;
+    padding : 30px;
+    margin-left : 15px;
+    border-radius : 20px;
+ }
+
+
 h1 {
-    color: blue;
+    color: rgb(155, 35, 35);
+}
+
+#inputTodo{
+    background-color :rgb(217, 231, 233);
+    width : 250px;
+    height:25px;
+    border : none;
+    border-radius: 20px;
+    
+} 
+#todoList {
+  background: rgb(217, 231, 233);
+  color: rgb(217, 231, 233);
+  padding: 10px;
+  margin-left: 5px;
+  list-style-type: none;
+  border-radius: 20px;
+  height:20px;
+ 
+  
+}
+
+#addTodoButton {
+    background-color : rgb(217, 231, 233);
+    height: 25px;
+    color : rgb(153, 181, 213);
+    border : 1px, solid, rgb(118, 176, 224);
+    border-radius: 5px;
+
 }
 
 .completed {
     text-decoration: line-through;
-    color: rgb(243, 173, 160);    
+    color: rgb(213, 55, 55);    
 }
 
 .trashcan{
     font-size: large;
-    margin: 8px;
-    color: rgb(213, 55, 55)
-    
-    
+    margin-left: 300px;
+    color: rgb(213, 55, 55);
+  
     
 }

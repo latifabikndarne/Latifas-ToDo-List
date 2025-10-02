@@ -8,20 +8,26 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     
 </head>
-<body>
-    <h1>  Todo List </h1>
+<body >
+   
+    <nav> 
+      <button onclick="document.querySelector('link').href='main.css';">first </button>
+      <button onclick="document.querySelector('link').href='main2.css';">Second</button>  
+    </nav>
+    <div>
+    <h1>  Latifas To Do List </h1>
     <p id ="Completed"> </p>
     <br>
-    <label for="inputTodo"> Ny uppgift </label>
-    <input type="text" id="inputTodo">
-    
+    <label  for="inputTodo" >   </label>
+    <input type="text" id="inputTodo" placeholder="Skriv en uppgift!"> 
+   
     <button type ="button" id="addTodoButton"> Lägg till</button>
     
     <small> info text </small>
     <ul id="todoList">
         <!-- Här kommer alla uppgifter att hamna -->
     </ul>
-
+</div>
     <script src='main.js'></script>
 </body>
 </html>
