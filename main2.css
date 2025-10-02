@@ -16,10 +16,9 @@ html{
     margin-left : 100px;
     border: 1px, solid, rgba(190, 209, 203, 0.948);
     border-radius : 20px;
+    text-align: center;
 
  }
-
-
 h1 {
     color: rgb(150, 78, 78);
     font-family: 'Dancing Script', 'Pacifico', cursive;
@@ -35,23 +34,24 @@ h1 {
     height:30px;
     border : 2px, solid, rgb(150, 78, 78);
     border-radius: 20px;
-    margin-left : 90px;
+    margin-left : 20px;
+    margin-bottom : 5px;
     
 } 
 #todoList {
-  list-style-type: circle, 10px, black;
-  margin-left : 90px;
-  list-style-position: outside;
   font-family: 'Dancing Script', 'Pacifico', cursive;
+  list-style-type: none;
+  
   
 }
-
+ 
 #addTodoButton {
     background-color : rgba(202, 125, 81, 0.895);
     font-family: 'Dancing Script', 'Pacifico', cursive;
     font-size: 10px; 
     margin-left : 140px;
-    margin-top : 30px;
+    margin-top : 10px;
+    margin-right : 110px;
     height: 30px;
     color : black;
     border : 2px, solid, rgb(125, 77, 45);
@@ -65,9 +65,8 @@ h1 {
 }
 
 .trashcan{
-    font-size: large;
+    font-size: x-large;
     margin-left: 8px;
-    color: rgb(213, 55, 55);
-  
-    
+    color: rgb(234, 17, 17);
+
 }
